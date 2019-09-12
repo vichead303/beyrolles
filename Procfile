@@ -1,0 +1,1 @@
+worker: beyrollesbot.py
