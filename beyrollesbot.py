@@ -1,4 +1,6 @@
 import discord
+import os
+
 
 client = discord.Client()
 
@@ -22,5 +24,6 @@ async def on_message(message):
     elif message.content.startswith('!say'):
         await message.channel.send('leave message')
 
-client.run('NjIxNzAwMjc5Mzg5Mzg4ODAw.XXpeiA.Mq7MJ6mqjjjpUBteChXV9ng1qzI')
+access_token = os.environ["BOT_TOKEN"]        
+client.run(access_token)
 
