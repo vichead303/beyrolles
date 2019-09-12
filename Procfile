@@ -1,1 +1,1 @@
-worker: beyrollesbot.py
+worker: python beyrollesbot.py
